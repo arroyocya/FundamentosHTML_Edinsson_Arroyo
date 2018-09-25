@@ -104,12 +104,14 @@
 	</table>
 </section>
 <section>
-	<form id="FormEstudios" class="FormEstudios"  method="post" action="">
-		<h2>Agregar Estudios</h2>
+	<br/>
+	<form id="FormEstudios" class="FormEstudios" name="FormEstudios" method="post" action="">
+	<fieldset>
+	<legend>Agregar Estudios</legend>
 		<ul>
 			<li>
 				<label>AÑO: </label>
-				<select> 
+				<select name="ano" id="ano"> 
 					<option value="" selected="selected"></option>
 					<option value="1" >2000</option>
 					<option value="2" >2001</option>
@@ -136,32 +138,32 @@
 			</li>
 			<li>
 				<label>INSTITUCIÓN: </label>
-				<input id="element_1" name="element_1" class="element text large" type="text" maxlength="255" value=""/> 
+				<input type="text" maxlength="255" id="institucion" name="institucion" required/> 
 			</li>
 			<li>
-				<label class="description" for="element_2">LUGAR: </label>
-				<input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
+				<label>LUGAR: </label>
+				<input type="text" maxlength="255" id="lugar" name="lugar" required/> 
 			</li>
 			<li>
-				<label class="description" for="element_3">TITULO: </label>
-				<input id="element_3" name="element_3" class="element text large" type="text" maxlength="255" value=""/> 
+				<label>TITULO: </label>
+				<input type="text" maxlength="255" id="titulo" name="titulo" required/> 
 			</li>
 			<li>
-				<label class="description" for="element_4">¿CULMINO?: </label>
-				<input id="element_4_1" name="element_4_1" class="element checkbox" type="checkbox" value="1" />
-				<label class="choice" for="element_4_1">Culminado</label>
-				<input id="element_4_2" name="element_4_2" class="element checkbox" type="checkbox" value="1" />
-				<label class="choice" for="element_4_2">En Curso</label>
-				<input id="element_4_3" name="element_4_3" class="element checkbox" type="checkbox" value="1" />
-				<label class="choice" for="element_4_3">Aplazado</label>
+				<label>¿CULMINO? </label>
+				<input type="radio" id="radioculmino" name="radioculmino" value="culminado" />
+				<label for="labelculminado">Culminado</label>
+				<input type="radio" id="radioculmino" name="radioculmino" value="encurso" />
+				<label for="labelencurso">En Curso</label>
+				<input type="radio" id="radioculmino" name="radioculmino" value="aplazado" />
+				<label for="labelaplazado">Aplazado</label>
 			</li>		
 			
-			<li class="buttons">
-			    <input type="hidden" name="form_id" value="27905" />
+			<br/>
+			    
 				<input id="Enviar" class="button" type="submit" name="Enviar" value="Enviar" />
-			</li>
-			</ul>
-		</form>	
+		</ul>
+	</fieldset>
+	</form>	
 </section>
 
 <footer>
