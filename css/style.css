@@ -1,0 +1,34 @@
+body {
+	width: 790px;
+	margin: 0 auto;
+	font-family:Arial, Helvetica, sans-serif;
+	background: #0099CC url(../img/bg_gradient.gif) repeat-x top;
+	position:relative;
+	font-size: 1em;
+	
+}
+
+h2 {
+	font-size: 1.2em;
+	font-variant: small-caps;
+	color: #6cc606;
+}
+h1 {
+	font-variant: small-caps;
+	color: #A4262C;
+}
+
+p {
+	font-size: 0.8em;
+	text-align: justify;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+
